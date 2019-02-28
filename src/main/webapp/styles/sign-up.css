@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+body {
+    margin: 0 ;
+    padding:  0 ;
+}
+
+.header {
+    height: 80px ;
+    background: #dedede ;
+}
+
+.main {
+    height: 600px ;
+    background-image: url("../images/bg.jpg"); /* 指定背景图片 ( 使用相对路径 )*/
+    background-position: center ; /*指定背景图片的位置*/
+    background-size: cover ; /*指定背景图片的尺寸( 这里采用覆盖整个元素的方式 ) */
+    background-repeat: no-repeat ; /* 指定背景图片的重复方式 ( no-repeat 表示不重复 )*/
+    position: relative ; /* 为了能够让子元素参照当前元素进行绝对定位，当前元素的定位方式必须不能是 static */
+}
+
+
+
+.main .sign {
+    position: absolute ; /* 参照非 static 定位的父元素来确定自己的位置 ( 绝对定位 ) */
+    right: 150px ; /* 当前元素的右边缘 距离 父元素 的右边缘 150 像素 */
+    top: 50px ; /* 当前元素的上边缘 距离 父元素 的上边缘 50 像素 */
+    width: 400px ;;
+    background: #FFFFFF ;
+    box-shadow: 0 0 5px 4px #dedede ;
+    border: 1px solid #dedede ;
+}
+
+.main .sign .title {
+    text-align: center ;
+    line-height: 40px ;
+    font-size: 22px ;
+}
+
+.main .sign .row {
+    margin: 5px 1.5%;
+    overflow: hidden ; /* 为了避免当前元素内部的所有元素都浮动后导致当前元素塌陷 */
+    border: 1px solid #dddddd;
+    border-radius: 5px ;
+}
+
+.main .sign .row label {
+    float: left ;
+    width: 10% ;
+    height: 50px ;
+    line-height: 50px ;
+    text-align: center ;
+ }
+
+.main .sign .row span {
+    float: right;
+    width: 90% ;
+    height: 50px ;
+}
+
+.main .sign .row span input {
+    float: left ;
+    width: 95% ;
+    height: 48px ;
+    background: transparent ;
+    border: none ;
+    outline: none ;
+}
+
+.main .sign .identity {
+    margin: 5px 1.5%;
+    overflow: hidden ; /* 为了避免当前元素内部的所有元素都浮动后导致当前元素塌陷 */
+    border: 1px solid #dddddd;
+    border-radius: 5px ;
+}
+
+.main .sign .identity label {
+    float: left;
+    width: 50% ;
+    height: 50px ;
+    text-align: center ;
+}
+
+.main .sign .identity label input {
+    width: 80% ;
+    height: 48px ;
+    text-align: center ;
+    border: none ;
+    outline: none ;
+}
+
+.main .sign .identity span {
+    float: left;
+    width: 50% ;
+    height: 50px ;
+    text-align: right ;
+}
+
+.main .sign .identity span img {
+    width: 99% ;
+}
+
+.main .sign .buttons input {
+    margin: 5px 1.5%;
+    width: 97% ;
+    height: 40px ;
+    font-size: 16px ;
+    border: 1px solid #3385ff ;
+    background: #3385ff ;
+    color: #FFFFFF ;
+}
+
+.footer {
+    height: 100px ;
+    background: #dedede ;
+}
+

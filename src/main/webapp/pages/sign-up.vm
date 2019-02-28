@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>注册问道，求学问道</title>
+
+        <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="/styles/sign-up.css">
+
+    </head>
+    <body>
+
+        <div class="header"></div>
+
+        <div class="main">
+
+            <div class="sign">
+
+                <p class="title">注册问道</p>
+
+                <div class="row">
+                    <label>     <i class="fa fa-user-o"></i>     </label>
+                    <span>     <input type="text" name="username" placeholder="请输入用户名">     </span>
+                </div>
+
+                <div class="row">
+                    <label>     <i class="fa fa-key"></i>     </label>
+                    <span>     <input type="password" name="password" placeholder="请输入密码">     </span>
+                </div>
+
+                <div class="row">
+                    <label>     <i class="fa fa-keyboard-o"></i>     </label>
+                    <span>     <input type="password" name="confirm" placeholder="请确认密码">     </span>
+                </div>
+
+                <div class="identity">
+                    <label>     <input type="password" name="confirm" placeholder="请确认密码">     </label>
+                    <span>     <img src="/images/bg.jpg" >     </span>
+                </div>
+
+                <div class="buttons">
+                    <input type="submit" value="注册">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer"></div>
+
+
+    </body>
+</html>
